@@ -1,2 +1,2 @@
 # XMD_importexport
-xmd i/o addon for blender
+this is a w.i.p xmd i/o addon for blender.
