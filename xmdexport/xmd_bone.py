@@ -88,14 +88,14 @@ def WriteBones(fileio : FileIO.TextFileIO, armaturedata : bpy.types.Armature, no
         fileio.WriteLine("\tchild_joints 0\n") #fix, dunno what this is for
         fileio.WriteLine("\tINSTANCE_LIST\n")
         fileio.WriteLine("\t{\n")
-        if boneindex is 0:
+        if boneindex == 0:
             fileio.WriteLine("\t\tINSTANCE mesh {\n")
             fileio.WriteLine("\t\t\tobject_id " + str(polymeshid) + "\n")
             fileio.WriteLine("\t\t\tnum_uv_sets 0\n")
             fileio.WriteLine("\t\t\tmaterial 0\n")
             fileio.WriteLine("\t\t}\n")
         fileio.WriteLine("\t}\n")
-        if boneindex is not 0:
+        if boneindex != 0:
             fileio.WriteLine("\tsegment_scale_compensate 1\n")
         fileio.WriteLine("}\n")
 
