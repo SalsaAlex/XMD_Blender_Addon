@@ -1,7 +1,7 @@
 from .. import FileIO
+import mathutils
 
 import bpy
-import mathutils
 
 def BoundsFromPoints(pointlist : mathutils.Vector):
     mins = mathutils.Vector([99999, 99999, 99999])
@@ -99,4 +99,4 @@ def WriteBones(fileio : FileIO.TextFileIO, armaturedata : bpy.types.Armature, no
             fileio.WriteLine("\tsegment_scale_compensate 1\n")
         fileio.WriteLine("}\n")
 
-        return nodeiditer #weird ass language
+        return nodeiditer

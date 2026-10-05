@@ -3,7 +3,7 @@ schema_version = "1.0.0"
 # Example of manifest file for a Blender extension
 # Change the values according to your extension
 id = "xmd_io"
-version = "1.0.0"
+version = "2.0.0"
 name = "XMD I/O"
 tagline = "This is a W.I.P importer and exporter for the XMD file format."
 maintainer = "salsatobias"

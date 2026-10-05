@@ -8,6 +8,10 @@ def ToggleEditMode(blendercontext : bpy.types.Context):
     if blendercontext.mode.count('EDIT') is not 1:
         bpy.ops.object.mode_set(mode='EDIT')
 
+def TogglePoseMode(blendercontext : bpy.types.Context):
+    if blendercontext.mode.count('POSE') is not 1:
+        bpy.ops.object.mode_set(mode='POSE')
+
 def SetObjectAsActive(blendercontext : bpy.types.Context, blenderobj : bpy.types.Object):
     blenderobj.select_set(state=True)
     blendercontext.view_layer.objects.active = blenderobj
